@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @4444Harsh
 - 👀 I’m interested in Data Science
 - 🌱 I’m currently learning Deep Learning
-- 💞️ I’m looking to collaborate on .................................................................................................................................................sorry i cant to share this.
+- 💞️ I’m looking to collaborate on ............................................................................................................................................,okay
 - 📫 How to reach me LinkedIN:- www.linkedin.com/in/harshgupta4444
 - 😄 Pronouns: Harsh
 - ⚡ Fun fact: .........................................
