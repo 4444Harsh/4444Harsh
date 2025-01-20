@@ -2,7 +2,7 @@
 - 👀 I’m interested in Data Science
 - 🌱 I’m currently learning Deep Learning
 - 💞️ I’m looking to collaborate on ............................................................................................................................................,okay
-- 📫 How to reach me LinkedIN:- www.linkedin.com/in/harshgupta4444
+- 📫 How to reach me LinkedIN:- www.linkedin.com/in/4444harsh
 - 😄 Pronouns: Harsh
 - ⚡ Fun fact: .........................................
 
