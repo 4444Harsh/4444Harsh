@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+header {
+  background: #3c8cc9;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allows nav items to wrap on smaller screens */
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* About Section */
+#about-me {
+  padding: 2rem 1rem; /* Reduced padding for smaller screens */
+  text-align: center;
+  background: #fffeed;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  flex: 1 1 100%; /* Full width on smaller screens */
+  margin-bottom: 2rem; /* Adds space between text and stats */
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.about-text .btn {
+  background: #007bff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  display: inline-block;
+  margin-right: 1rem; /* Space between buttons */
+}
+
+.about-text .btn:hover {
+  background: #0056b3;
+}
+
+.about-text .download-btn {
+  background: #28a745;
+}
+
+.about-text .download-btn:hover {
+  background: #218838;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+  gap: 2rem;
+  flex: 1 1 100%; /* Full width on smaller screens */
+}
+
+.stat {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stat h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #666;
+}
+
+footer {
+  background: #3c8cc9;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stacks content vertically */
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center; /* Centers text on smaller screens */
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 1rem; /* Reduces gap between stats */
+  }
+
+  .stat {
+    padding: 1rem; /* Reduces padding for smaller screens */
+  }
+
+  .stat h3 {
+    font-size: 1.8rem; /* Slightly smaller font size */
+  }
+
+  .stat p {
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    margin: 0 10px; /* Reduces spacing between nav items */
+  }
+
+  .about-text h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .about-text p {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .about-text .btn {
+    display: block; /* Stacks buttons vertically */
+    margin: 0.5rem auto; /* Centers buttons */
+  }
+
+  .stat h3 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .stat p {
+    font-size: 0.8rem; /* Smaller font size for mobile */
+  }
+}
