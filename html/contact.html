@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Harsh Gupta</title>
+  <link rel="stylesheet" href="styles/contact.css"> <!-- Link to contact.css -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact">
+      <h1>CONTACT ME</h1>
+      <div class="contact-container">
+        <!-- Left Side: Contact Information -->
+        <div class="contact-info">
+          <h2>CONTACT ME HERE</h2>
+          <p>I'm always looking forward to meeting like-minded people, teaming up to work on fresh ideas, or just talking about new possibilities. If you have a question, a suggestion, or simply a hello, feel free to send me a note. I will try my best to respond to you as quickly as possible!</p>
+          <ul>
+            <li><strong>Location:</strong> Bareilly, India</li>
+            <li><strong>Email:</strong> guptaharshby@gmail.com</li>
+            <li><strong>Education:</strong> Invertis University, Bareilly</li>
+            <li><strong>Mobile Number:</strong> 7983167609</li>
+            <li><strong>Languages:</strong> English, Hindi</li>
+          </ul>
+          <!-- Social Media Icons -->
+          <div class="contact-icon">
+            <a href="https://www.kaggle.com/harshgupta4444" target="_blank"><i class="fab fa-kaggle"></i></a>
+          <a href="https://x.com/4444harshgupta" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/4444harsh" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/4444harsh" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form">
+          <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="YOUR NAME" required>
+            <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
+            <input type="text" id="subject" name="subject" placeholder="ENTER SUBJECT" required>
+            <textarea id="message" name="message" placeholder="Message Here..." required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <p id="formStatus"></p> <!-- Display form submission status -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Harsh Gupta. All rights reserved.</p>
+  </footer>
+
+  <!-- Include EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your User ID
+    emailjs.init('YOUR_EMAILJS_USER_ID'); // Replace with your EmailJS User ID
+
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Send the form data using EmailJS
+      emailjs.sendForm('YOUR_EMAILJS_SERVICE_ID', 'YOUR_EMAILJS_TEMPLATE_ID', this)
+        .then(function () {
+          // Show success message
+          document.getElementById('formStatus').textContent = 'Message sent successfully!';
+          document.getElementById('formStatus').style.color = 'green';
+          document.getElementById('contactForm').reset(); // Clear the form
+        }, function (error) {
+          // Show error message
+          document.getElementById('formStatus').textContent = 'Failed to send message. Please try again.';
+          document.getElementById('formStatus').style.color = 'red';
+        });
+    });
+  </script>
+</body>
+</html>
