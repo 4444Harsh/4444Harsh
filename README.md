@@ -89,7 +89,7 @@
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4444Harsh&hide=html&theme=tokyonight" alt="Harsh's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=4444Harsh&langs_count=10&theme=tokyonight" alt="Harsh's GitHub Stats" />
 </p>
 
 
